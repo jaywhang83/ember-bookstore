@@ -1,12 +1,12 @@
+<h2>Administrator's Area:</h2>
+  <!-- <h1> Welcome to Super JavaScript Books </h1>
 
-  <h1> Welcome to Super JavaScript Books </h1>
-
-  We hope you find exactly what you're looking for.
+  We hope you find exactly what you're looking for. -->
 
 {{new-book saveBook="saveBook"}}
 
   <ul>
     {{#each model as |book|}}
-       {{book-tile book=book destroyBook="destroyBook"}}
+       {{book-tile book=book update="update" destroyBook="destroyBook"}}
     {{/each}}
   </ul>

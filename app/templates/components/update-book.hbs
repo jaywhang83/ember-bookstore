@@ -1,0 +1,49 @@
+{{#if updateBookForm}}
+<!-- <div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content"> -->
+  <h4>Update {{book.title}}</h4>
+  <div class="row">
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s6">
+         <label for="author">Author</label>
+         <br>
+         {{input value=author id="author" placeholder=book.author}}
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s8">
+         <label for="title">Title</label>
+         <br>
+         {{input value=title id="title" placeholder=book.title}}
+       </div>
+     </div>
+     <div class="row">
+      <div class="input-field col s8">
+        <label for="description">Description</label>
+        <br>
+        {{textarea value=description id="description" class="materialize-textarea"}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s4">
+        <label for="price">Price</label>
+        <br>
+        {{input value=price id="price" placeholder=book.price}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <label for="image">Image URL</label>
+        <br>
+        {{input value=image id="image" placeholder=book.image}}
+      </div>
+    </div>
+      <button class="waves-effect waves-light btn green" {{action 'update' book}}>Save</button>
+   </form>
+ <!-- </div>
+ </div> -->
+</div>
+{{else}}
+    <button data-target="modal1" class="waves-effect waves-light btn modal-trigger blue"  {{action 'updateBookForm'}}>Update</button>
+{{/if}}

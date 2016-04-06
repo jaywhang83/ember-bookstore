@@ -1,0 +1,7 @@
+<h2>{{book.title}}</h2>
+
+by: {{book.author}}<br>
+${{book.price}}<br>
+<p><img src={{book.image}} alt={{book.title}}></p><br>
+Description: {{book.description}}<br>
+<button class="waves-effect waves-light btn blue" {{action 'buy' book}}>Buy this book!</button>

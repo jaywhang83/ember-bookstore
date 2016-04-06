@@ -3,18 +3,23 @@
 <div class="row">
   <div class="col s3">
     <div class="card medium">
+      {{#link-to 'book' book.id}}
       <div class="card-image">
         <img src={{book.image}} alt={{book.title}}>
       </div>
       <div class="card-content">
-        {{book.title}}<br>
-        by: {{book.author}}<br>
-        ${{book.price}}<br>
+        {{book.title}}
+        <br>
+        by: {{book.author}}
+        <br>
+        ${{book.price}}
       </div>
-      <div class="card-action">
-        <button class="waves-effect waves-light btn" {{ action 'delete' book}}>Delete</button>
-      </div>
+      {{/link-to}}
     </div>
+  </div>
+  <div class="col s8">
+    <button class="waves-effect waves-light btn red" {{ action 'delete' book}}>Delete</button>
+    {{update-book book=book update="update"}}
   </div>
 </div>
 </li>
