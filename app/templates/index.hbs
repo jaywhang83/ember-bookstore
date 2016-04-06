@@ -1,12 +1,62 @@
-<h2>Administrator's Area:</h2>
-  <!-- <h1> Welcome to Super JavaScript Books </h1>
 
-  We hope you find exactly what you're looking for. -->
+  <h1> Welcome to Super JavaScript Books </h1>
 
-{{new-book saveBook="saveBook"}}
+  We hope you find exactly what you're looking for.
+
 
   <ul>
     {{#each model as |book|}}
-       {{book-tile book=book update="update" destroyBook="destroyBook"}}
+       {{book-tile book=book}}
     {{/each}}
   </ul>
+  {{!-- The "Open Modal" button --}}
+
+  {{md-btn
+    action=toggleModal
+           text="Show Modal"
+           action='toggleModal'}}
+  {{!-- The Modal --}}
+  {{#if isModalShown}}
+    {{#md-modal close='toggleModal'
+                class="test-modal"}}
+
+      {{!-- The body of the modal --}}
+      <div class="modal-content">
+        <h2>{{book.title}}</h2>
+
+        by: {{book.author}}<br>
+        ${{book.price}}<br>
+        <p><img src={{book.image}} alt={{book.title}}></p><br>
+        Description: {{book.description}}<br>
+        <button class="waves-effect waves-light btn blue" {{action 'buy' book}}>Buy this book!</button>
+
+      </div>
+
+      {{!-- The actions at the bottom of the modal --}}
+      <div class="modal-footer">
+
+        {{!-- Modal's Agree Button --}}
+        <a class="modal-action
+                  modal-close
+                  waves-effect
+                  waves-green
+                  btn-flat
+                  agree-button"
+            {{action 'agree'}}>
+          Agree
+        </a>
+
+        {{!-- Modal's Cancel Button --}}
+        <a class="modal-action
+                  modal-close
+                  waves-effect
+                  waves-green
+                  btn-flat
+                  cancel-button"
+            {{action 'toggleModal'}}>
+          Cancel
+        </a>
+
+      </div> {{!-- .modal-footer --}}
+    {{/md-modal}}
+  {{/if}}
