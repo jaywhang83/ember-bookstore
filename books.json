@@ -1,0 +1,20 @@
+{ "books": [{
+    "title": "JavaScript: The Definitive Guide",
+    "author": "David Flanagan",
+    "description": "Since 1996, JavaScript: The Definitive Guide has been the bible for JavaScript programmers—a programmer's guide and comprehensive reference to the core language and to the client-side JavaScript APIs defined by web browsers. The 6th edition covers HTML5 and ECMAScript 5. Many chapters have been completely rewritten to bring them in line with today's best web development practices. New chapters in this edition document jQuery and server side JavaScript. It's recommended for experienced programmers who want to learn the programming language of the Web, and for current JavaScript programmers who want to master it. 'A must-have reference for expert JavaScript programmers...well-organized and detailed.' --Brendan Eich, creator of JavaScript, CTO of Mozilla 'I made a career of what I learned from JavaScript: The Definitive Guide.' -- Andrew Hedges, Tapulous",
+    "price": 23.49,
+    "image": "https://books.google.com/books/content/images/frontcover/6TAODdEIxrgC?fife=w300-rw"
+  }, {
+    "title": "Eloquent JavaScript, 2nd Ed.: A Modern Introduction to Programming",
+    "author": "Marijn Haverbeke",
+    "description": "JavaScript is at the heart of almost every modern Web application, whether it's Google Apps, Twitter, or the newest browser-based game. Though it's simple for beginners to pick up and play with, JavaScript is not a toy—it's a flexible and complex language that can be used to build full-scale applications.",
+    "price": 14.37,
+    "image": "https://books.google.com/books/content/images/frontcover/mDzDBQAAQBAJ?fife=w300-rw"
+  }, {
+    "title": "Beginning AngularJS",
+    "author": "Andrew Grant",
+    "description": "Beginning AngularJS is your step-by-step guide to learning the powerful AngularJS JavaScript framework. AngularJS is one of the most respected and innovative frameworks for building properly structured, easy-to-develop web applications. This book will teach you the absolute essentials, from downloading and installing AngularJS, to using modules, controllers, expressions, filters, and directives. Unlike many other books, you don't need experience with AngularJS or deep JavaScript knowledge to get started here.",
+    "price": 39.49,
+    "image": "https://books.google.com/books/content/images/frontcover/-VUnCgAAQBAJ?fife=w300-rw"
+  }]
+}
