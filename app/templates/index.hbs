@@ -1,12 +1,12 @@
-<div class="data">
+
   <h1> Welcome to Super JavaScript Books </h1>
 
   We hope you find exactly what you're looking for.
 
+{{new-book saveBook="saveBook"}}
 
   <ul>
     {{#each model as |book|}}
        {{book-tile book=book destroyBook="destroyBook"}}
     {{/each}}
   </ul>
-</div>
