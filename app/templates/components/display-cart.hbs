@@ -1,4 +1,5 @@
 <h1>{{log shoppingCart.books}}</h1>
 {{#each shoppingCart.books as |book|}}
-  {{book.title}} -- {{book.price}}
+Title:  {{book.title}} --Price-- ${{book.price}}
 {{/each}}
+{{total shoppingCart.books}}
