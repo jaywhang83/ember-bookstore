@@ -1,14 +1,17 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Super JavaScript Books</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="admin">Log In</a></li>
-      <li><a href="about">about</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="/">Home</a></li>
-    </ul>
-  </div>
-</nav>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Super JavaScript Books</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{#link-to 'admin'}}Log In{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About Us{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+        <li>{{#link-to 'index'}}home{{/link-to}}</li>
+        <li>{{#link-to 'cart'}}Cart{{/link-to}}</li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <div class="container">
   {{outlet}}

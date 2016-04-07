@@ -18,6 +18,10 @@ export default Ember.Component.extend({
       };
       this.set('addNewBook', false);
       this.sendAction('saveBook', params);
+    },
+
+    formHide(){
+      this.set('addNewBook', false);
     }
    }
 });

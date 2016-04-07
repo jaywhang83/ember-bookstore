@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('contact');
   this.route('book', {path: '/book/:book_id'});
   this.route('admin');
+  this.route('cart');
 });
 
 export default Router;

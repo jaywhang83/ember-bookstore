@@ -18,6 +18,10 @@ export default Ember.Component.extend({
       };
       this.set('updateBookForm', false);
       this.sendAction('update', book, params);
+    },
+
+    formHide(){
+      this.set('updateBookForm', false);
     }
    }
 });
