@@ -5,13 +5,9 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         {{#if session.isAuthenticated}}
                 <button
-                    class='btn btn-default navbar-btn'
-                    {{action 'signOut'}}
-                >
-                    {{fa-icon 'sign-out'}} Sign Out
-                </button>
+                    class="waves-effect waves-light btn green"
+                    {{action 'signOut'}}>{{'sign-out'}}Sign Out</button>
             {{/if}}
-        <li>{{#link-to 'admin'}}Log In{{/link-to}}</li>
         <li>{{#link-to 'about'}}About Us{{/link-to}}</li>
         <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
