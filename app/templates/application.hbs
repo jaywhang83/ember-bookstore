@@ -3,11 +3,29 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Super JavaScript Books</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if session.isAuthenticated}}
+                <button
+                    class='btn btn-default navbar-btn'
+                    {{action 'signOut'}}
+                >
+                    {{fa-icon 'sign-out'}} Sign Out
+                </button>
+            {{/if}}
         <li>{{#link-to 'admin'}}Log In{{/link-to}}</li>
         <li>{{#link-to 'about'}}About Us{{/link-to}}</li>
         <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
         <li>{{#link-to 'cart'}}<i class="material-icons">shopping_cart</i>{{/link-to}}</li>
+        <li>
+        <div class='list-group'>
+            {{#link-to 'sign-up' class='list-group-item'}}
+                Sign Up
+            {{/link-to}}
+            {{#link-to 'sign-in' class='list-group-item'}}
+                Sign In
+            {{/link-to}}
+        </div>
+      </li>
       </ul>
     </div>
   </nav>
